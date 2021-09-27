@@ -41,7 +41,7 @@
                      </div>
                  </div>
                  <div class=" d-grid gap-2 d-md-flex justify-content-md-end">
-                     <button type="submit" class="btn btn-primary">Cetak Tracer</button>
+                 <a href="<?= base_url('peminjaman/cetak/'.$dataRM->no_rm.''); ?>"><button type="button" class="btn btn-primary">Cetak Tracer</button></a>
                  </div>
              </form>
          </div>
