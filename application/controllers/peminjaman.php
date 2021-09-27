@@ -46,7 +46,7 @@ class peminjaman extends CI_Controller
             }
         } else if ($this->session->userdata('level') == 2) {
             $data['title'] = 'Data Peminjaman';
-            
+
             $data['notifterlambat'] = $this->notiflambatModel->notifterlambat();
             $data['notiftoday'] = $this->notiflambatModel->notiftoday();
             $data['get_notiftoday'] = $this->notiflambatModel->get_notiftoday();
@@ -60,7 +60,11 @@ class peminjaman extends CI_Controller
         } else {
             redirect('auth', 'refresh');
         }
-         
+    }
+
+    public function cetak()
+    {
+        $this->load->view('print/tracer');
     }
 
     public function tambah_peminjaman()
