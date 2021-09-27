@@ -57,6 +57,38 @@
 <script src="<?php echo base_url() . 'assets/vendor/new/js/bootstrap.js' ?>" type="text/javascript"></script>
 <script src="<?php echo base_url() . 'assets/vendor/new/js/jquery-ui.js' ?>" type="text/javascript"></script>
 
+<!-- start - This is for export functionality only -->
+<script src="<?= base_url('assets/'); ?>vendor/datatables/dataTables.buttons.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/datatables/buttons.flash.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/datatables/libs/jszip.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/datatables/libs/pdfmake.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/datatables/libs/vfs_fonts.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/datatables/buttons.html5.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/datatables/buttons.print.min.js"></script>
+<!-- end - This is for export functionality only -->
+
+<script type="text/javascript">
+    $('.export').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            {
+                extend: 'pdf',
+                orientation: 'landscape',
+                exportOptions: {
+                    columns: ':not(:last-child)',
+                }
+            },
+            {
+                extend: 'excel',
+                exportOptions: {
+                    columns: ':not(:last-child)',
+                }
+            }
+        ]
+    });
+    $('.buttons-pdf, .buttons-excel').addClass('btn btn-primary me-1');
+</script>
+
 <script type="text/javascript">
     $(document).ready(function() {
 
