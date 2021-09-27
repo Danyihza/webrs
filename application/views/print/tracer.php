@@ -78,8 +78,9 @@
 <body>
     <div class="form">
         <div class="page">
-            <div class="subpage" style="margin-top: 12px; margin-bottom: 12px;">
+            <div class="subpage" style="margin-top: 20px; margin-bottom: 12px;">
                 <div style="text-align:center">
+
                     <span class="sm-font bold">Rumah Sakit Graha Sehat</span> <br>
                     <span class="md-font small" >Jl.Panglima Sudirman No.02, Sumber Armi, Sumberlele, Kec.Kraksaan, Kab.Probolinggo, Jawa Timur</span>
                     <hr>
