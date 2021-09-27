@@ -80,10 +80,22 @@
         <div class="page">
             <div class="subpage" style="margin-top: 12px; margin-bottom: 12px;">
                 <div style="text-align:center">
-                    <span class="md-font bold">Rumah Sakit Graha Sehat</span> <br>
-                    <span class="md-font bold">Kraksaan</span>
-
+                    <span class="sm-font bold">Rumah Sakit Graha Sehat</span> <br>
+                    <span class="md-font small" >Jl.Panglima Sudirman No.02, Sumber Armi, Sumberlele, Kec.Kraksaan, Kab.Probolinggo, Jawa Timur</span>
+                    <hr>
                 </div>
+                <div style="text-align:center">
+                    <span class="sm-font bold">TRACER RM</span> <br>
+                    <hr>
+                </div>
+<pre>
+No.RM           : <?php echo $dataRM->no_rm;?><br>
+Nama Pasien     : <?php echo $dataRM->nama_pasien;?> <br>
+Tanggal Lahir   : <?php echo $dataRM->tgl_lahir;?> <br>
+Jenis Kelamin   : <?php echo $dataRM->jekel;?> <br>
+Ruangan         : <?php echo $dataRM->ruangan;?> <br>
+Tanggal Pinjam  : <?php echo $dataRM->tgl_pinjam;?> 
+</pre>
             </div>
         </div>
     </div>
