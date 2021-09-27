@@ -40,4 +40,10 @@ class peminjamanModel extends CI_Model
             ->get('peminjaman')
             ->row();
     }
+    public function cetak($no_rm)
+    {
+        return $this->db->where('no_rm', $no_rm)
+            ->get('peminjaman')
+            ->row();
+    }
 }
