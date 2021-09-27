@@ -4,7 +4,7 @@
          <div class="card-body">
              <h5 class="card-title">Laporan Pengembalian</h5>
              <?= $this->session->flashdata('message'); ?>
-             <table class="table table-bordered table-responsive" id="dataTable" width="100%" cellspacing="0">
+             <table class="table table-bordered table-responsive export" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>No</th>
