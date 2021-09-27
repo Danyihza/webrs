@@ -30,7 +30,7 @@
                                     <button type="submit" class="btn btn-primary">
                                         Login
                                     </button>
-                                    <button type="submit" class="btn btn-danger">
+                                    <button type="reset" class="btn btn-danger">
                                         Cancel
                                     </button>
                                 </div>
