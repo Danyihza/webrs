@@ -5,7 +5,7 @@ class laporanketerlambatanModel extends CI_Model
 {
     public function get_laporanketerlambatan()
     {
-        return $this->db->where('tgl_kembali>', 'tgl_haruskembali')
+        return $this->db->where('tgl_kembali > tgl_haruskembali')
         ->get('pengembalian')
             ->result();
     }
